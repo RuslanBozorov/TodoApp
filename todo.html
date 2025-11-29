@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo-App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <div id="header_f">
+          <input type="text" id="todo_input" placeholder="New Todo" /><button
+            id="add_btn"
+            style="background-color: transparent; border: none; cursor: pointer"
+          >
+            <img
+              src="./imgs/plus.png"
+              width="30px"
+              height="30px"
+              style="margin-top: 5px"
+              alt=""
+            />
+          </button>
+        </div>
+      </div>
+      <button
+        id="all_del"
+        style="
+          background-color: transparent;
+          border: none;
+          margin-top: 30px;
+          cursor: pointer;
+        "
+      >
+        <img src="./imgs/garbage.png" width="30px" alt="Hammasini O'chirish" />
+      </button>
+      <label
+        style="
+          font-family: sans-serif;
+          font-size: 16px;
+          font-weight: 700;
+          color: rgba(128, 0, 53, 0.639);
+        "
+        >All Delete</label
+      >
+
+      <div id="todos_container"></div>
+    </div>
+
+    <script src="./todo.js"></script>
+  </body>
+</html>
